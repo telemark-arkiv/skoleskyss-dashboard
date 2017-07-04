@@ -6,7 +6,7 @@ import Head from 'next/head'
 export default () => (
   <div>
     <Head>
-      <title>Dashboard digitalisering</title>
+      <title>Dashboard skoleskyss</title>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <link href='//cdn.muicss.com/mui-0.9.17/css/mui.min.css' rel='stylesheet' type='text/css' media='screen' />
       <link rel='icon' sizes='192x192' href='static/images/icons/chrome-touch-icon-192x192.png' />

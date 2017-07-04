@@ -17,16 +17,16 @@ export default class Index extends React.Component {
       <div>
         <Head />
         <Container fluid>
-          <h1 className='mui--text-title'>Tilskudd Dashboard</h1>
+          <h1 className='mui--text-title'>Skoleskyss Dashboard</h1>
           <Row>
             <Col md='4'>
-              <Queue title='Antall i kø' source='https://stats.logs.tilskudd.t-fk.win/stats/queue' refresh='10' />
+              <Queue title='Antall i kø' source='https://logs.skoleskyss.t-fk.no/stats/queue' refresh='10' />
             </Col>
             <Col md='4'>
-              <Saksbehandling title='Antall behandlet' source='https://seneca-firebase-test.firebaseio.com/tfk-saksbehandling-organisasjon-tilskudd.json' refresh='10' />
+              <Saksbehandling title='Antall behandlet' source='https://stats.service.t-fk.no/stats/skoleskyss' refresh='10' />
             </Col>
             <Col md='4'>
-              <Total title='Antall totalt' source='https://tfk-stats.firebaseio.com/tilskudd.json' refresh='10' />
+              <Total title='Antall totalt' source='https://logs.skoleskyss.t-fk.no/stats/total' refresh='10' />
             </Col>
           </Row>
           <Row>
@@ -34,7 +34,7 @@ export default class Index extends React.Component {
               <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u461130-5ddec2afb433002a5b23822e40bcd29e' refresh='10' />
             </Col>
             <Col md='8'>
-              <Summary title='Oppsummering' source='https://tfk-stats.firebaseio.com/tilskudd.json' refresh='10' />
+              <Summary title='Skoler' source='https://logs.skoleskyss.t-fk.no/stats/schools' refresh='10' />
             </Col>
           </Row>
         </Container>
