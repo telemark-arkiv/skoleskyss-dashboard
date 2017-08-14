@@ -31,7 +31,7 @@ export default class Index extends React.Component {
           </Row>
           <Row>
             <Col md='4'>
-              <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u466262-daa4d4bbc82a3c56f77e175c46bc19e2' refresh='10' />
+              <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u466262-6b2eba14d53383a6bab439cf37278141' refresh='10' />
             </Col>
             <Col md='8'>
               <Summary title='Skoler' source='https://logs.skoleskyss.t-fk.no/stats/schools' refresh='10' />
