@@ -1,7 +1,7 @@
 {
   "name": "skoleskyss-dashboard",
   "description": "Dashboard for skoleskyss",
-  "version": "1.0.18",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=8.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -21,7 +21,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm run build && now out --static -n dashboard-skoleskyss && now alias"
+    "now-deploy": "npm run build && now --static out -n dashboard-skoleskyss && now alias"
   },
   "keywords": [
     "dashboard",
@@ -51,7 +51,7 @@
     "ava": "0.22.0",
     "coveralls": "2.13.1",
     "nsp": "2.8.0",
-    "nyc": "11.1.0",
+    "nyc": "11.2.1",
     "standard": "10.0.3"
   },
   "dependencies": {
