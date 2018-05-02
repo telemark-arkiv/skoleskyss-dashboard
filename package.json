@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.8.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -21,7 +21,8 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm run build && now --static out -n dashboard-skoleskyss && now alias"
+    "deploy": "npm run build && now --static out -n dashboard-skoleskyss && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "dashboard",
@@ -45,7 +46,10 @@
     "env": {
       "NODE_ENV": "production"
     },
-    "type": "npm"
+    "type": "npm",
+    "engines": {
+      "node": "10.0.0"
+    }
   },
   "devDependencies": {
     "ava": "0.24.0",
@@ -56,9 +60,9 @@
   },
   "dependencies": {
     "axios": "0.17.1",
-    "react-dom": "16.2.0"
+    "react-dom": "16.2.0",
     "react": "16.2.0",
     "muicss": "0.9.32",
-    "next": "4.2.1",
+    "next": "4.2.1"
   }
 }
